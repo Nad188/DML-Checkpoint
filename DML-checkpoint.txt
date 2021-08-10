@@ -1,0 +1,23 @@
+--Insert into Product ARRAY
+    --Explicit Insert
+INSERT INTO Product(Product_id, Product_Name, Category, Price)
+VALUES('P01', 'mercedes AMG', Car,71568);
+  --Implicit Insert
+INSERT INTO Product VALUES('P02', 'jeep grand cherokee', 'car', 59623);
+--**************************************************************--
+--Insert into Customer ARRAY
+    --Explicit Insert
+INSERT INTO Customer(Customer_id, Customer_Name, Customer_Tel)
+VALUES('C01', 'Oussema', 55984328)
+
+    --Implicit Insert
+INSERT INTO Customer VALUES('C02', 'Adel', 98651234)
+
+--**************************************************************--
+--Insert into Orders ARRAY
+    --Explicit Insert
+INSERT INTO Orders(Customer_id, Product_id, OrderDate, Quantity, Total_amount)
+VALUES('C01', 'P02', '', 1,59623);
+
+    --Implicit Insert
+INSERT INTO Orders VALUES('C02', 'P01', '28/05/2020', 1, 71568);
